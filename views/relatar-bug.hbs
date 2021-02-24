@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Equipe Tucan" />
+
+    <title>TucanDev | Relatar um Bug</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.svg" />
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Third party plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        rel="stylesheet" />
+
+    <!-- CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="css/stylesbootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top pt-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="/">Tucan.Develops</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive" style="transition: all 0.8s ease 0s;">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#about">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#services">Serviços</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li> -->
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/#contact">Fale Conosco!</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container">
+        <div class="row justify-content-center p-5">
+            <div class="col-sm-6 align-self-center">
+                <img src="assets/img-bug.svg" alt="">
+            </div>
+            <div class="col-sm-6 align-self-center">
+                <h3 class="text-primary h1"><strong class="text-secondary">Desculpe</strong> o transtorno!</h3>
+                <p class="text-muted h2">aqui você pode nos contar o que está acontecendo</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <div class="row justify-content-center p-5">
+            <div class="col-md-6 align-item-md-right">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+
+                    <!-- Substitua por accesKey enviada para o seu e-mail -->
+                    <input type="hidden" name="accessKey" value="897ae0b9-44a6-4c14-adb5-3cdf4f1ee735"> <!-- Required -->
+                    <input type="hidden" name="redirectTo" value="">
+
+                    <div class="row mb-3">
+                      <div class="col">
+                        <label for="name">Nome</label>
+                        <input id="name" name="name" type="text" class="form-control" placeholder="Nome" required>
+                      </div>
+                      <div class="col">
+                        <label for="surname">Sobrenome</label>
+                        <input id="surname" name="$surname" type="text" class="form-control" placeholder="Sobrenome" required>
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="subject">Assunto</label>
+                            <input id="subject" name="$subjects" type="text" class="form-control" placeholder="Assunto">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="email">E-mail</label>
+                            <input id="email" type="text" name="email" class="form-control" placeholder="Seu melhor e-mail" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Conte-nos o que aconteceu!" required></textarea>
+                        </div>
+                    </div>
+                    <!-- Se recebermos dados neste campo o envio será ignorado  -->
+                    <input type="text" name="honeypot" style="display: none;">
+                    
+                    <input type="submit" value="Enviar" class="btn btn-secondary btn-xl btn-block" />
+                </form>
+            </div>
+            <div class="col-md-4 align-item-md-right">
+                <h4 class="text-primary h4"><i class="fas fa-map-marker-alt mr-2"></i>Endereço</h4>
+                <p>R. Eduardo Ribeiro - Jauary 2, Itacoatiara/Am</p>
+                <h4 class="text-primary"><i class="fas fa-headset mr-2"></i>Contato</h4>
+                <p>92 99360-7168</p>
+                <p>92 99483-9180</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d704.2450624333775!2d-58.43247087272497!3d-3.1443551866687027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x926f544447f99497%3A0x480acf86ca87aefe!2sR.%20Francisco%20Fiuza%20de%20Lima%2C%203848%20-%20Jauary%20II%2C%20Itacoatiara%20-%20AM%2C%2069104-376!5e0!3m2!1spt-BR!2sbr!4v1613508525375!5m2!1spt-BR!2sbr" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="bg-light p-3 fixed-lg-bottom">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2 col-4">
+                    <img src="assets/footer.svg" alt="logotipo-horizontal">
+                </div>
+                <div class="col-lg-10 col-8 text-right">
+                    <h5 class="d-inline mr-3">Siga nos</h5>
+                    <a href="https://www.linkedin.com/company/tucan-dev" target="_blank"><i class="fab fa-linkedin-in fa-2x btn-link"></i></a>
+                    <a href="https://www.facebook.com/tucandev" target="_blank"><i class="fab fa-facebook fa-2x btn-link"></i></a>
+                    <a href="https://www.instagram.com/tucandev/" target="_blank"><i class="fab fa-instagram fa-2x btn-link"></i></a>                  
+                </div>
+            </div>
+            <div class="small text-center text-muted p-1">2021&copy Feito <i class="fas fa-heart"></i> + <i class="fas fa-coffee"></i> por Tucan Develops</div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <!-- JS -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

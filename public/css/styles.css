@@ -1,0 +1,236 @@
+/* My CSS */
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #21143d;
+}
+
+hr.light {
+  border-color: #fff;
+}
+
+.btn {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+.btn-xl:hover{
+  transition: 0.5s;
+}
+
+.page-section {
+  padding: 8rem 0;
+}
+
+#mainNav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+#mainNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: var(--primary);
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
+}
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #f77f00;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #f77f00 !important;
+}
+@media (min-width: 992px) {
+  #mainNav {
+    box-shadow: none;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: var(--primary);
+  }
+  #mainNav .navbar-brand:hover {
+    color: var(--secondary);
+    transition: .3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: var(--primary);
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary);
+    transition: .3s;
+  }
+  #mainNav .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+  #mainNav.navbar-scrolled {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--primary);
+  }
+  #mainNav.navbar-scrolled .navbar-brand {
+    color: #fff;
+  }
+  #mainNav.navbar-scrolled .navbar-brand:hover {
+    color: var(--secondary);
+    transition: .3s;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
+  #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary);
+    transition: .3s;
+  }
+}
+
+section.bg-about{
+  background: url("../assets/bg2.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.text-paragraph {
+  text-indent: 1.5rem !important;
+}  
+
+@media (max-width: 576px) {
+  .text-paragraph {
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-indent: 1.5rem !important;
+  }  
+}
+
+section.bg-services {
+  background: url("../assets/bg1.svg");
+  background-position: bottom, center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.card-Z {
+  border-radius: 1.2rem;
+  color: var(--primary);
+  border: 3px solid #f75b00;
+  margin-right: 0rem;
+  padding: 1.4rem;
+  height: 420px;
+}
+
+.card-Z:hover {
+  padding: 1rem;
+  transition: 0.5s;
+  color: #fff;
+  background-color: #f75b00;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .card-Z {
+    padding: 2rem;
+    border-radius: 1.2rem;
+    color: var(--primary);
+    border: 3px solid #f75b00;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .card-Z:hover {
+    padding: 1rem;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #f75b00;
+
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .text-paragraph {
+    font-size: 1.2rem;
+    text-indent: 1.5rem !important;
+  }  
+}
+
+@media (max-width: 576px) {
+  .card-Z {
+    border-radius: 1.2rem;
+    color: var(--primary);
+    border: 3px solid #f75b00;
+    margin-right: 0rem;
+    padding: 2rem;
+    height: auto;
+    width: auto;
+  }
+  
+  .card-Z:hover {
+    padding: 1rem;
+    transition: 0.5s;
+    color: #fff;
+    background-color: #f75b00;
+    height: auto;
+    width: auto;
+  }
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.links a{
+ color: var(--primary);
+ margin: 2rem 0 2rem 0;
+ padding: 0;
+ text-decoration: none;
+ font-size: 1.2rem;
+}
+
+.links a:hover{
+  color: var(--secondary);
+  margin: 2rem 0 2rem 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.btn-link {
+  color: var(--primary);
+  text-decoration: none !important;
+}
+
+.btn-link:hover {
+  color: var(--secondary);
+  text-decoration: none !important;
+  transition: .5s;
+}
+
+.btn-up {
+  position: relative;
+  left: 90%;
+  bottom: -1rem;
+}
+
+.btn-up:hover {
+  transition: .5s;
+}

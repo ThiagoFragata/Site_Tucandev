@@ -1,0 +1,15 @@
+{
+  "name": "tucandev",
+  "version": "1.0.0",
+  "description": "Site de Empresa Digital de desenvolvimento Web e Mobile",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Equipe TucanDev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1"
+  }
+}
